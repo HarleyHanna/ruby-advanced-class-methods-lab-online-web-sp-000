@@ -43,7 +43,7 @@ class Song
   
   def self.new_from_filename(filename)
     song = filename.split(" - ")
-    song.slice! ".mp3"
+    song.[1]slice! ".mp3"
     @song = self.new
     @song.name = song[1]
     @song.artist_name = song[0]
